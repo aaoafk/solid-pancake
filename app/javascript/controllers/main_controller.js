@@ -5,6 +5,6 @@ export default class extends Controller {
   static targets=[ "script", "output" ];
 
   doEval() {
-    this.outputTarget.textContent = `Yum! This cake evaluated to: ${eval(this.scriptTarget.value)}`
+    this.outputTarget.textContent = `Yum! This cake evaluated to: ${eval(this.scriptTarget.innerText)}`
   }
 }
