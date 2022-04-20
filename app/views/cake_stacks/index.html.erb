@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<main id="cake_stacks" class="md:container md:mx-auto">
+  <h1 class='font-large leading-tight text-5xl mt-0 mb-2 text-blue-600'>Cake stacks</h1>
+  <% @cake_stacks.each do |cake_stack| %>
+    <%= render cake_stack %>
+    <p>
+      <%= link_to "Show this cake stack", cake_stack %>
+    </p>
+  <% end %>
+  <%= link_to "New cake stack", new_cake_stack_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+</main>
+

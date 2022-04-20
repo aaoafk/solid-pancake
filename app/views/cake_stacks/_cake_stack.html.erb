@@ -1,0 +1,12 @@
+<div data-controller="main" class="md:container md:mx-auto" id="<%= dom_id cake_stack %>">
+  <button data-action="click->main#doEval">DO EVAL!</button>
+    <strong>Script:</strong>
+    <p data-main-target="script" type="text"><%= cake_stack.script %>
+  </p>
+
+  <p>
+    <strong>Msg:</strong>
+    <p data-main-target="output"><%= cake_stack.msg %></p>
+  </p>
+
+</div>

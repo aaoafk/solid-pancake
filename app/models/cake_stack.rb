@@ -1,0 +1,2 @@
+class CakeStack < ApplicationRecord
+end
